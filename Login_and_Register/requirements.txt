@@ -1,0 +1,7 @@
+argon2-cffi==19.1.0
+bcrypt==3.1.6
+cffi==1.11.5
+Django==2.0
+pycparser==2.19
+pytz==2018.9
+six==1.12.0

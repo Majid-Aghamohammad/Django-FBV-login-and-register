@@ -1,0 +1,14 @@
+{% block title %}Home{% endblock %}
+{% load static %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}!
+  <p><a href="{% url 'home' %}">logout</a></p>
+
+{% else %}
+  <p>You are logged in succe full </p>
+
+  <a href="/logout">logout</a>
+{% endif %}
+{% endblock %}
